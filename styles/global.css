@@ -13,7 +13,9 @@
 
 html, body {
     height: 100%;
+    min-height: 100%;
     width: 100%;
+    min-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -22,25 +24,25 @@ body {
     background: var(--background) 0 / cover fixed;
 }
 
-h1, h2, h3 {
-    text-decoration: underline solid var(--accent);
-}
-
-.overlay {
-    display: flex;
-    flex-direction: column;
+#__next {
     min-height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1, h2, h3 {
+    text-decoration: underline solid var(--accent);
 }
 
 .floating-box {
     position: relative;
     background: var(--white);
     width: 40rem;
-    height: 10%;
+    max-width: 100%;
+    height: auto;
     padding: 30px;
-    margin: 30px;
+    margin-bottom: 30px;
     box-shadow: var(--shadow);
 }
 
@@ -48,26 +50,11 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.nav a {
-    text-decoration: none;
-    color: var(--accent);
-    position: relative;
-    font-size:35px;
+.nav a{
+    margin-right: 10px;
 }
 
-.links {
-    text-align: left;
-    margin: 30px;
-    font-size: 24px;
-}
-
-.fab.fa-gitlab, .fas.fa-cloud-download-alt, .far.fa-map, .fas.fa-leaf, .fas.fa-server {
-    color: var(--accent);
-    padding-right: 20px;
-}
-
-
-a .tooltip {
+.tooltip {
     position: absolute;
     margin-top: -10px;
     margin-left: 10px;
@@ -80,40 +67,13 @@ a .tooltip {
     z-index: 1;
 }
 
-.nav a{
-    margin-right: 10px;
-}
-
-.social a {
-    margin-right: 10px;
-}
-
 a:hover .tooltip {
     visibility: visible;
 }
 
-.italic {
-    font-style: italic;
-    color: var(--accent);
-}
-
-.strike {
-    text-decoration: line-through solid var(--accent);
-}
-
-.accent{
-    font-style: normal;
-    color: var(--accent);
-}
-
-@media screen and (max-width: 600px) {
-
-    .floating-box.mobile_center{
-        text-align: center;
-    }
-
+@media screen and (max-width: 699px) {
     /* shows names on mobile */
-    .floating-box a .tooltip {
+    .tooltip {
         position: relative;
         margin-top: 0;
         margin-left: 0;
@@ -126,17 +86,18 @@ a:hover .tooltip {
         z-index: 0;
     }
 
-    .floating-box .nav {
-        float: initial;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .floating-box {
+        padding: 5%;
+        max-width: 90%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .floating-box .social {
-        float: initial;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .floating-box .nav {
+        display: grid;
+        text-align: left;
+        margin: 30px;
     }
 }

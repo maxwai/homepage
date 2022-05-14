@@ -1,0 +1,52 @@
+.fontAwesomeAccentColour {
+    color: var(--accent);
+    padding-right: 20px;
+}
+
+.fontAwesomeBigger {
+    font-size: 1.33em;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    text-align: left;
+    margin: 30px;
+    font-size: 24px;
+}
+
+.topLevelLinks {
+    text-decoration: none;
+    color: var(--accent);
+    position: relative;
+    font-size:35px;
+}
+
+.accent{
+    font-style: normal;
+    color: var(--accent);
+}
+
+.MapsIframe {
+    position: relative;
+    width: calc(40rem + 60px);
+    height: 480px;
+    border: 0;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 699px) {
+    .overlay {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 90%;
+    }
+}

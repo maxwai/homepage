@@ -8,9 +8,6 @@ export default function _document() {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"/>
 
-                {/* icons from fontawesome*/}
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
-
                 {/* Generated from https://realfavicongenerator.net/ */}
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
@@ -20,6 +17,8 @@ export default function _document() {
                 <meta name="msapplication-TileColor" content="#ffc40d"/>
                 <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
                 <meta name="theme-color" content="#bfb306"/>
+
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <body>
             <Main/>
