@@ -17,8 +17,6 @@ export default function _document() {
                 <meta name="msapplication-TileColor" content="#ffc40d"/>
                 <meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
                 <meta name="theme-color" content="#bfb306"/>
-
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <body>
             <Main/>
