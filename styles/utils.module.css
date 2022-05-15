@@ -17,7 +17,7 @@
 
 .links {
     text-align: left;
-    margin: 30px;
+    margin: 0;
     font-size: 24px;
 }
 
@@ -41,6 +41,15 @@
     max-width: 100%;
     max-height: 100%;
     box-shadow: var(--shadow);
+}
+
+@media screen and (min-width: 700px) {
+    .hostedServices {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 30px;
+        margin: 30px;
+    }
 }
 
 @media screen and (max-width: 699px) {

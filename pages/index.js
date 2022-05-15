@@ -45,44 +45,46 @@ export default function Home({alive}) {
                     </a>
                 </div>
                 <h2>Self hosted Services:</h2>
-                <div className={utilStyles.links}>
-                    <a href="https://gitlab.lochhamer123.de">
-                        <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Gitlab
-                    </a>
-                </div>
-                <div className={utilStyles.links}>
-                    <a href="https://nextcloud.lochhamer123.de">
-                        <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
-                        Nextcloud
-                    </a>
-                </div>
-                <div className={utilStyles.links}>
-                    <a href="https://paperless.lochhamer123.de/">
-                        <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Paperless
-                    </a>
-                </div>
-                {alive ? <div className={utilStyles.links}>
-                    <a href="https://map.lochhamer123.de">
+                <div className={utilStyles.hostedServices}>
+                    <div className={utilStyles.links}>
+                        <a href="https://gitlab.lochhamer123.de">
+                            <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Gitlab
+                        </a>
+                    </div>
+                    <div className={utilStyles.links}>
+                        <a href="https://nextcloud.lochhamer123.de">
+                            <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
+                            Nextcloud
+                        </a>
+                    </div>
+                    <div className={utilStyles.links}>
+                        <a href="https://paperless.lochhamer123.de/">
+                            <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Paperless
+                        </a>
+                    </div>
+                    {alive ? <div className={utilStyles.links}>
+                        <a href="https://map.lochhamer123.de">
+                            <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
+                            Minecraft Dynmap
+                        </a>
+                    </div> : <div className={utilStyles.links}>
                         <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
-                        Minecraft Dynmap
-                    </a>
-                </div> : <div className={utilStyles.links}>
-                    <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
-                    Map Not Running
-                </div>}
-                <div className={utilStyles.links}>
-                    <a href="https://uptime.lochhamer123.de/status">
-                        <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Uptime
-                    </a>
-                </div>
-                <div className={utilStyles.links}>
-                    <a href="https://github.com/maxwai/homepage">
-                        <FontAwesomeIcon icon={faGlobe} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Code for this Website
-                    </a>
+                        Map Not Running
+                    </div>}
+                    <div className={utilStyles.links}>
+                        <a href="https://uptime.lochhamer123.de/status">
+                            <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Uptime
+                        </a>
+                    </div>
+                    <div className={utilStyles.links}>
+                        <a href="https://github.com/maxwai/homepage">
+                            <FontAwesomeIcon icon={faGlobe} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Code for this Website
+                        </a>
+                    </div>
                 </div>
             </div>
             <iframe className={utilStyles.MapsIframe}
