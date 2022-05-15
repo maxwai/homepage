@@ -18,7 +18,6 @@ export async function getStaticProps() {
 
 // noinspection JSUnusedGlobalSymbols
 export default function Home({alive}) {
-
     return (
         <>
             <Head>
