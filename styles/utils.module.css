@@ -49,4 +49,13 @@
         padding-right: 5%;
         max-width: 90%;
     }
+
+    .links {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    .topLevelLinks {
+        font-size:25px;
+    }
 }
