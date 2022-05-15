@@ -6,7 +6,7 @@ import {faGitlab, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 
 // noinspection JSUnusedGlobalSymbols
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const response = await fetch("https://map.lochhamer123.de");
     const alive = response.ok;
     return {
