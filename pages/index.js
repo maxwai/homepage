@@ -5,7 +5,20 @@ import {faCloudArrowDown, faLeaf, faServer, faMale, faMap, faGlobe} from '@forta
 import {faGitlab, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 
-export default function Home() {
+// noinspection JSUnusedGlobalSymbols
+export async function getStaticProps() {
+    const response = await fetch("https://map.lochhamer123.de");
+    const alive = response.ok;
+    return {
+        props: {
+            alive,
+        },
+    }
+}
+
+// noinspection JSUnusedGlobalSymbols
+export default function Home({alive}) {
+
     return (
         <>
             <Head>
@@ -51,12 +64,15 @@ export default function Home() {
                         Paperless
                     </a>
                 </div>
-                {/*<div class={utilStyles.links}>
+                {alive ? <div className={utilStyles.links}>
                     <a href="https://map.lochhamer123.de">
                         <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
                         Minecraft Dynmap
                     </a>
-                </div>deactivated since not used*/}
+                </div> : <div className={utilStyles.links}>
+                    <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
+                    Map Not Running
+                </div>}
                 <div className={utilStyles.links}>
                     <a href="https://uptime.lochhamer123.de/status">
                         <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
