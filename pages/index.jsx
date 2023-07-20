@@ -7,7 +7,7 @@ import Link from "next/link";
 
 // noinspection JSUnusedGlobalSymbols
 export async function getServerSideProps() {
-    const response = await fetch("https://map.lochhamer123.de");
+    const response = await fetch("https://map.waideli.ch");
     const alive = response.ok;
     return {
         props: {
@@ -47,25 +47,25 @@ export default function Home({alive}) {
                 <h2>Self hosted Services:</h2>
                 <div className={utilStyles.hostedServices}>
                     <div className={utilStyles.links}>
-                        <a href="https://gitlab.lochhamer123.de">
+                        <a href="https://gitlab.waideli.ch">
                             <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
                             Gitlab
                         </a>
                     </div>
                     <div className={utilStyles.links}>
-                        <a href="https://nextcloud.lochhamer123.de">
+                        <a href="https://nextcloud.waideli.ch">
                             <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
                             Nextcloud
                         </a>
                     </div>
                     <div className={utilStyles.links}>
-                        <a href="https://paperless.lochhamer123.de/">
+                        <a href="https://paperless.waideli.ch/">
                             <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
                             Paperless
                         </a>
                     </div>
                     {alive ? <div className={utilStyles.links}>
-                        <a href="https://map.lochhamer123.de">
+                        <a href="https://map.waideli.ch">
                             <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
                             Minecraft Dynmap
                         </a>
@@ -74,7 +74,7 @@ export default function Home({alive}) {
                         Map Not Running
                     </div>}
                     <div className={utilStyles.links}>
-                        <a href="https://uptime.lochhamer123.de/status">
+                        <a href="https://uptime.waideli.ch/status">
                             <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
                             Uptime
                         </a>
