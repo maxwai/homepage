@@ -32,7 +32,7 @@ export default function Home({alive}) {
                         <FontAwesomeIcon icon={faGithub}/>
                         <span className="tooltip">「GitHub」</span>
                     </a>
-                    <Link href="/index">
+                    <Link href="/me">
                         <a className={utilStyles.topLevelLinks}>
                             <FontAwesomeIcon icon={faMale}/>
                             <span className="tooltip">「Me」</span>
