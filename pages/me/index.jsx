@@ -32,8 +32,6 @@ export default function Me() {
                     , Germany.<br/>
                     I was born in December of 1999 in Munich, Bavaria.<br/>
                 </p>
-                I mainly communicate via Discord:{' '}
-                <span className={utilStyles.accent}>MaxWai#1999</span>
                 <h3>Things I Do</h3>
                 <ul>
                     <li>
