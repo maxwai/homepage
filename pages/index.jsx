@@ -32,11 +32,9 @@ export default function Home({alive}) {
                         <FontAwesomeIcon icon={faGithub}/>
                         <span className="tooltip">「GitHub」</span>
                     </a>
-                    <Link href="/me">
-                        <a className={utilStyles.topLevelLinks}>
-                            <FontAwesomeIcon icon={faMale}/>
-                            <span className="tooltip">「Me」</span>
-                        </a>
+                    <Link href="/me" className={utilStyles.topLevelLinks}>
+                        <FontAwesomeIcon icon={faMale}/>
+                        <span className="tooltip">「Me」</span>
                     </Link>
                     <a href="https://www.youtube.com/channel/UCoXvICIefTuB_FiD4uvsvmQ"
                        className={utilStyles.topLevelLinks}>

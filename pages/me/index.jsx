@@ -15,10 +15,8 @@ export default function Me() {
             </Head>
             <div className="floating-box">
                 <Link href="/">
-                    <a>
-                        <FontAwesomeIcon icon={faArrowLeft}/>
-                        <span className="tooltip">Back</span>
-                    </a>
+                    <FontAwesomeIcon icon={faArrowLeft}/>
+                    <span className="tooltip">Back</span>
                 </Link>
                 <h2>About Me</h2>
                 <p>
