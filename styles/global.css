@@ -4,7 +4,7 @@
     --black: #000000;
     --white-translucent: rgba(255, 255, 255, 0.4);
     --shadow: 5px 5px 10px hsla(329, 43%, 10%, 0.7);
-    --background: url('../public/images/background.jpg');
+    --background: url('../public/images/background.high.jpg'), url('../public/images/background.med.jpg'), url('../public/images/background.low.jpg');
 }
 
 * {
