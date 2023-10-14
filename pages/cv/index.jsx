@@ -3,7 +3,6 @@ import Link from "next/link";
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import profilePic from "../../public/images/profile_picture.jpg"
 import utilStyles from "../../styles/utils.module.css";
 
 export default function Me() {
@@ -21,7 +20,7 @@ export default function Me() {
                 </Link>
                 <h1>CV</h1>
                 <div className={utilStyles.profilePic}>
-                    <Image src={profilePic} alt="Profile Picture" fill/>
+                    <Image src="/images/profile_picture.jpg" alt="Profile Picture" fill/>
                 </div>
                 <div style={{display: "inline-block", verticalAlign: "middle"}}>
                     <h2 className={utilStyles.cvH2}>Maximilian Waidelich</h2>
