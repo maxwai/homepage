@@ -52,11 +52,41 @@
     box-shadow: var(--shadow);
 }
 
+.profilePic {
+    position: relative;
+    width: 10em;
+    aspect-ratio: 1146 / 1512;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.cvTable {
+    font-size: 1.25em;
+}
+
+.cvTable > tbody > tr > td:nth-child(1) {
+    text-decoration: underline solid var(--accent);
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+.timeStamp {
+    text-align: end;
+    color: grey;
+    font-size: 0.75em;
+}
+
 @media screen and (min-width: 700px) {
     .hostedServices {
         display: grid;
         grid-template-columns: 30% 40% 30%;
         row-gap: 30px;
+    }
+
+    .cvH2 {
+        margin-block-start: 0
     }
 }
 

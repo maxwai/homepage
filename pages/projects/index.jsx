@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from "next/link";
-import {faArrowLeft, faCircleChevronRight, faLink} from '@fortawesome/free-solid-svg-icons'
+import {faArrowLeft, faLink} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Code} from '@atlaskit/code';
 import utilStyles from "../../styles/utils.module.css";

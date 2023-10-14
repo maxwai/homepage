@@ -84,6 +84,13 @@ export default function Home() {
                                          size="2xs"/>
                     </Link>
                 </h1>
+                <h1>
+                    <Link href="/cv" className={utilStyles.headerLinks}>
+                        CV {' '}
+                        <FontAwesomeIcon icon={faCircleChevronRight} className={utilStyles.fontAwesomeAccentColour}
+                                         size="2xs"/>
+                    </Link>
+                </h1>
             </div>
             <iframe className={utilStyles.MapsIframe}
                     src="https://www.google.com/maps/d/embed?mid=1PYvlXwIXQChIU3Fsy3WMzXkQ4zpshhEk&ehbc=2E312F">
