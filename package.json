@@ -1,4 +1,6 @@
 {
+  "name": "homepage",
+  "version": "1.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +14,13 @@
     "@fortawesome/react-fontawesome": "0.2.0",
     "next": "13.5.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "@atlaskit/code": "14.6.8",
+    "node-emoji": "2.1.0"
+  },
+  "overrides": {
+    "@atlaskit/code": {
+      "react": "$react"
+    }
   }
 }

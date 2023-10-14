@@ -1,23 +1,19 @@
 import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCloudArrowDown, faLeaf, faServer, faMale, faMap, faGlobe} from '@fortawesome/free-solid-svg-icons'
+import {
+    faCloudArrowDown,
+    faLeaf,
+    faServer,
+    faMale,
+    faCubes,
+    faRectangleAd,
+    faCircleChevronRight
+} from '@fortawesome/free-solid-svg-icons'
 import {faGitlab, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 
-// noinspection JSUnusedGlobalSymbols
-export async function getServerSideProps() {
-    const response = await fetch("https://map.waideli.ch");
-    const alive = response.ok;
-    return {
-        props: {
-            alive,
-        },
-    }
-}
-
-// noinspection JSUnusedGlobalSymbols
-export default function Home({alive}) {
+export default function Home() {
     return (
         <>
             <Head>
@@ -36,54 +32,58 @@ export default function Home({alive}) {
                         <FontAwesomeIcon icon={faMale}/>
                         <span className="tooltip">「Me」</span>
                     </Link>
-                    <a href="https://www.youtube.com/channel/UCoXvICIefTuB_FiD4uvsvmQ"
+                    <a href="https://youtube.com/@maximilianwaidelich"
                        className={utilStyles.topLevelLinks}>
                         <FontAwesomeIcon icon={faYoutube}/>
                         <span className="tooltip">「Youtube」</span>
                     </a>
                 </div>
-                <h2>Self hosted Services:</h2>
+                <h2>Self hosted services:</h2>
+                <p className={utilStyles.leftAligned}>
+                    I host a lot of services for myself via docker on a server at home. <br
+                    className={utilStyles.desktopBreak}/>
+                    These services include, but are not limited to:
+                </p>
                 <div className={utilStyles.hostedServices}>
-                    <div className={utilStyles.links}>
-                        <a href="https://gitlab.waideli.ch">
-                            <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                            Gitlab
-                        </a>
+                    <div>
+                        <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                        Gitlab
                     </div>
-                    <div className={utilStyles.links}>
-                        <a href="https://nextcloud.waideli.ch">
-                            <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
-                            Nextcloud
-                        </a>
+                    <div>
+                        <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
+                        Nextcloud
                     </div>
-                    <div className={utilStyles.links}>
-                        <a href="https://paperless.waideli.ch/">
-                            <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                            Paperless
-                        </a>
+                    <div>
+                        <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                        Paperless
                     </div>
-                    {alive ? <div className={utilStyles.links}>
-                        <a href="https://map.waideli.ch">
-                            <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
-                            Minecraft Dynmap
-                        </a>
-                    </div> : <div className={utilStyles.links}>
-                        <FontAwesomeIcon icon={faMap} className={utilStyles.fontAwesomeAccentColour}/>
-                        Map Not Running
-                    </div>}
-                    <div className={utilStyles.links}>
-                        <a href="https://uptime.waideli.ch/status">
-                            <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                            Uptime
-                        </a>
+                    <div>
+                        <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                        Uptime
                     </div>
-                    <div className={utilStyles.links}>
-                        <a href="https://github.com/maxwai/homepage">
-                            <FontAwesomeIcon icon={faGlobe} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                            Code for this Website
-                        </a>
+                    <div>
+                        <FontAwesomeIcon icon={faCubes} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                        RPM Repository
+                    </div>
+                    <div>
+                        <FontAwesomeIcon icon={faRectangleAd} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                        PiHole
                     </div>
                 </div>
+                <h1>
+                    <Link href="/projects" className={utilStyles.headerLinks}>
+                        Personal Projects {' '}
+                        <FontAwesomeIcon icon={faCircleChevronRight} className={utilStyles.fontAwesomeAccentColour}
+                                         size="2xs"/>
+                    </Link>
+                </h1>
+                <h1>
+                    <Link href="/uni-projects" className={utilStyles.headerLinks}>
+                        University Projects {' '}
+                        <FontAwesomeIcon icon={faCircleChevronRight} className={utilStyles.fontAwesomeAccentColour}
+                                         size="2xs"/>
+                    </Link>
+                </h1>
             </div>
             <iframe className={utilStyles.MapsIframe}
                     src="https://www.google.com/maps/d/embed?mid=1PYvlXwIXQChIU3Fsy3WMzXkQ4zpshhEk&ehbc=2E312F">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import utilStyles from "../../styles/utils.module.css";
+import * as emoji from 'node-emoji'
 
 export default function Me() {
     return (
@@ -19,7 +19,7 @@ export default function Me() {
                     <span className="tooltip">Back</span>
                 </Link>
                 <h2>About Me</h2>
-                <p>
+                <>
                     Hello, I'm Maximilian Waidelich,<br/>
                     a half{' '}
                     <a>German<span className="tooltip">「&#127866;」</span></a>
@@ -29,16 +29,15 @@ export default function Me() {
                     <a>Munich<span className="tooltip">「&#129384;」</span></a>
                     , Germany.<br/>
                     I was born in December of 1999 in Munich, Bavaria.<br/>
-                </p>
+                </>
                 <h3>Things I Do</h3>
                 <ul>
                     <li>
-                        <a href="https://steamcommunity.com/id/maxdergottlicher/">Gaming</a>
-                        {' '}- Simulation, SandBox, Indie, Building
-                    </li>
-                    <li>
                         Coding - still{' '}
                         <a href="https://github.com/maxwai">learning</a>
+                    </li>
+                    <li>
+                        Gaming - simulation, sandBox, indie, building
                     </li>
                     <li>
                         Learning{' '}
@@ -53,10 +52,10 @@ export default function Me() {
                             <FontAwesomeIcon icon={faYoutube} size="lg"/>
                         </a>
                     </li>
-                    <li>Films</li>
-                    <li>Series</li>
                     <li>Drones</li>
+                    <li>Films and Series</li>
                     <li><a>アニメとマンガ<span className="tooltip">「Anime & Manga」</span></a></li>
+                    <li><a>Japan<span className="tooltip">「{emoji.get("jp")}」</span> </a></li>
                 </ul>
             </div>
         </>

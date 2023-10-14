@@ -1,6 +1,6 @@
 .fontAwesomeAccentColour {
     color: var(--accent);
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .fontAwesomeBigger {
@@ -15,10 +15,14 @@
     align-items: center;
 }
 
-.links {
+.hostedServices > div {
     text-align: left;
     margin: 0;
     font-size: 24px;
+}
+
+.leftAligned {
+    text-align: left;
 }
 
 .topLevelLinks {
@@ -26,6 +30,11 @@
     color: var(--accent);
     position: relative;
     font-size:35px;
+}
+
+.headerLinks {
+    text-decoration: underline solid var(--accent);
+    color: var(--black);
 }
 
 .accent{
@@ -46,9 +55,8 @@
 @media screen and (min-width: 700px) {
     .hostedServices {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 40% 30%;
         row-gap: 30px;
-        margin: 30px;
     }
 }
 
@@ -59,12 +67,16 @@
         max-width: 90%;
     }
 
-    .links {
+    .hostedServices > div {
         font-size: 20px;
         margin: 15px;
     }
 
     .topLevelLinks {
         font-size:25px;
+    }
+
+    .desktopBreak {
+        display: none;
     }
 }
