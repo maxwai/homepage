@@ -8,7 +8,8 @@ import {
     faMale,
     faCubes,
     faRectangleAd,
-    faCircleChevronRight
+    faCircleChevronRight,
+    faImages
 } from '@fortawesome/free-solid-svg-icons'
 import {faGitlab, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
@@ -46,29 +47,47 @@ export default function Home() {
                 </p>
                 <div className={utilStyles.hostedServices}>
                     <div>
-                        <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Gitlab
+                        <a href="https://hub.docker.com/r/gitlab/gitlab-ce">
+                            <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Gitlab
+                        </a>
                     </div>
                     <div>
-                        <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
-                        Nextcloud
+                        <a href="https://github.com/nextcloud/server">
+                            <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
+                            Nextcloud
+                        </a>
                     </div>
                     <div>
-                        <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Paperless
+                        <a href="https://docs.paperless-ngx.com/">
+                            <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Paperless
+                        </a>
                     </div>
                     <div>
-                        <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        Uptime
+                        <a href="https://github.com/louislam/uptime-kuma">
+                            <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Uptime
+                        </a>
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faCubes} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
                         RPM Repository
                     </div>
                     <div>
-                        <FontAwesomeIcon icon={faRectangleAd} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
-                        PiHole
+                        <a href="https://pi-hole.net/">
+                            <FontAwesomeIcon icon={faRectangleAd} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            PiHole
+                        </a>
                     </div>
+                    <div></div>
+                    <div>
+                        <a href="https://immich.app/">
+                            <FontAwesomeIcon icon={faImages} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            Immich
+                        </a>
+                    </div>
+                    <div></div>
                 </div>
                 <h1>
                     <Link href="/projects" className={utilStyles.headerLinks}>
