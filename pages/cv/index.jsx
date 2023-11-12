@@ -64,7 +64,14 @@ export default function Me() {
                     <h2>Experience</h2>
                     <h3>MicroFuzzy GmbH (February - June 2017)</h3>
                     Elektronik and network setup of new workplace tables
-                    <h3>Teiimo GmbH (March 2020 - now)</h3>
+                    <h3>Parfun Co., Ltd. (September 2022 - January 2023)</h3>
+                    Internship in Japan as part of studies.
+                    <ul>
+                        <li>Development of a modern Wordpress website</li>
+                        <li>Development of an Android App with an AWS Backend</li>
+                    </ul>
+                    <h3>Teiimo GmbH (March 2020 - January 2024)</h3>
+                    Working student position
                     <ul>
                         <li>Development of Android applications</li>
                         <li>Server management</li>
@@ -83,7 +90,7 @@ export default function Me() {
                     Drones
                 </>
                 <div className={utilStyles.timeStamp}>
-                    from 2023.10.14
+                    from 2023.11.12
                 </div>
             </div>
         </>
