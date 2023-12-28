@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,16 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.4.2",
-    "@fortawesome/free-brands-svg-icons": "6.4.2",
-    "@fortawesome/free-solid-svg-icons": "6.4.2",
+    "@fortawesome/fontawesome-svg-core": "6.5.1",
+    "@fortawesome/free-brands-svg-icons": "6.5.1",
+    "@fortawesome/free-solid-svg-icons": "6.5.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "next": "14.0.2",
+    "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@atlaskit/code": "14.6.8",
-    "node-emoji": "2.1.0",
-    "sharp": "0.32.6"
+    "@atlaskit/code": "15.1.0",
+    "node-emoji": "2.1.3",
+    "sharp": "0.33.1"
   },
   "overrides": {
     "@atlaskit/code": {

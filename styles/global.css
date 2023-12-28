@@ -7,10 +7,6 @@
     --background: url('../public/images/background.jpg');
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
 html, body {
     height: 100%;
     min-height: 100%;
