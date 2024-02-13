@@ -51,10 +51,10 @@ export default function Me() {
                 </div>
                 <>
                     <h2>Education</h2>
-                    B.Sc. Informatik at <a>
+                    B.Sc. Computer Science at <a>
                     TUM <span className="tooltip">Technical University of Munich</span> </a> (not finished)
                     (2017 - 2019) <br/>
-                    B.Sc. Informatik at the University of Applied Science Munich (2020 - now)
+                    B.Sc. Computer Science at the University of Applied Science Munich (2020 - now)
                 </>
                 <>
                     <h2>Diplomas</h2>
@@ -90,7 +90,7 @@ export default function Me() {
                     Drones
                 </>
                 <div className={utilStyles.timeStamp}>
-                    from 2023.11.12
+                    from 2024.02.13
                 </div>
             </div>
         </>

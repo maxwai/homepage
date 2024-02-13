@@ -34,7 +34,7 @@
     text-decoration: none;
     color: var(--accent);
     position: relative;
-    font-size:35px;
+    font-size: 35px;
 }
 
 .headerLinks {
@@ -42,7 +42,7 @@
     color: var(--black);
 }
 
-.accent{
+.accent {
     font-style: normal;
     color: var(--accent);
 }
@@ -96,19 +96,9 @@
 }
 
 @media screen and (max-width: 699px) {
-    .overlay {
-        padding-left: 5%;
-        padding-right: 5%;
-        max-width: 90%;
-    }
-
     .hostedServices > div {
         font-size: 20px;
         margin: 15px;
-    }
-
-    .topLevelLinks {
-        font-size:25px;
     }
 
     .desktopBreak {

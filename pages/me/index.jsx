@@ -33,8 +33,8 @@ export default function Me() {
                 <h3>Things I Do</h3>
                 <ul>
                     <li>
-                        Coding - still{' '}
-                        <a href="https://github.com/maxwai">learning</a>
+                        <a href="https://github.com/maxwai">Coding</a>
+                        {' '}- still learning
                     </li>
                     <li>
                         Gaming - simulation, sandBox, indie, building

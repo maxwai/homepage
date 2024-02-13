@@ -1,5 +1,8 @@
+FROM node:20-alpine AS chef
+WORKDIR /app
+
 # Install dependencies only when needed
-FROM node:18-alpine AS deps
+FROM chef AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 # COPY package.json yarn.lock ./
@@ -10,7 +13,7 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 # Rebuild the source code only when needed
-FROM node:18-alpine AS builder
+FROM chef AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -26,7 +29,7 @@ COPY . .
 RUN npm run build
 
 # Production image, copy all the files and run next
-FROM node:18-alpine AS runner
+FROM chef AS runner
 WORKDIR /app
 
 ENV NODE_ENV production

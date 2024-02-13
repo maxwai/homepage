@@ -9,7 +9,8 @@ import {
     faCubes,
     faRectangleAd,
     faCircleChevronRight,
-    faImages
+    faImages,
+    faBoxOpen
 } from '@fortawesome/free-solid-svg-icons'
 import {faGitlab, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
@@ -80,7 +81,12 @@ export default function Home() {
                             PiHole
                         </a>
                     </div>
-                    <div></div>
+                    <div>
+                        <a href="https://github.com/stashapp/stash-box">
+                            <FontAwesomeIcon icon={faBoxOpen} className={utilStyles.fontAwesomeAccentColour}/>
+                            Stash-box
+                        </a>
+                    </div>
                     <div>
                         <a href="https://immich.app/">
                             <FontAwesomeIcon icon={faImages} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
