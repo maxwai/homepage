@@ -82,9 +82,9 @@ export default function Home() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://github.com/stashapp/stash-box">
+                        <a href="https://github.com/hay-kot/homebox/">
                             <FontAwesomeIcon icon={faBoxOpen} className={utilStyles.fontAwesomeAccentColour}/>
-                            Stash-box
+                            Homebox
                         </a>
                     </div>
                     <div>
