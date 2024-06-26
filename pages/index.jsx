@@ -82,7 +82,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://github.com/hay-kot/homebox/">
+                        <a href="https://github.com/sysadminsmedia/homebox">
                             <FontAwesomeIcon icon={faBoxOpen} className={utilStyles.fontAwesomeAccentColour}/>
                             Homebox
                         </a>
