@@ -54,11 +54,24 @@ export default function Me() {
                     B.Sc. Computer Science at <a>
                     TUM <span className="tooltip">Technical University of Munich</span> </a> (not finished)
                     (2017 - 2019) <br/>
-                    B.Sc. Computer Science at the University of Applied Science Munich (2020 - now)
+                    B.Sc. Computer Science at the University of Applied Science Munich (2020 - 2024) <br/>
+                    M.Sc Computer Science at the University of Applied Science Munich (2024 - now)
                 </>
                 <>
                     <h2>Diplomas</h2>
-                    2017: French "Baccalauréat" with grade "good" (15.02/20 Pt.)
+                    <table className={utilStyles.cvDiplomasTable} style={{borderCollapse: "collapse"}}>
+                        <tbody>
+                            <tr>
+                                <td>2017:</td>
+                                <td>French "Baccalauréat" with grade "good" (15.02/20 Pt.)</td>
+                            </tr>
+                            <tr>
+                                <td>2024:</td>
+                                <td>Bachelor of Science Computer Science (GPA 1.8)<br/>
+                                Thesis "Unified modeling and visualization of software metrics" (1.2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </>
                 <>
                     <h2>Experience</h2>
@@ -78,19 +91,32 @@ export default function Me() {
                         <li>Development of binary parser in Python and C++</li>
                         <li>Design of new internal processes for software development</li>
                     </ul>
+                    <h3>LRE Medical GmbH (February 2024 - now)</h3>
+                    Working student position
+                    <ul>
+                        <li>Server management</li>
+                        <li>Validation of Tools used to certify software</li>
+                    </ul>
                 </>
                 <>
-                    <h2>Certificates</h2>
-                    C1 Cambridge English Certificate (February 2020)
+                    <h2>Language Certificates</h2>
+                    C1 Cambridge English Certificate (February 2020)<br/>
+                    A2 UNIcert® Basic Japanese (March 2024)
                 </>
                 <>
                     <h2>Hobbies</h2>
-                    Piano <br/>
-                    Tennis <br/>
-                    Drones
+                    <table style={{width: "100%"}}>
+                        <tbody>
+                            <tr>
+                                <td>Piano</td>
+                                <td>Tennis</td>
+                                <td>Drones</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </>
                 <div className={utilStyles.timeStamp}>
-                    from 2024.02.13
+                    from 2024.11.16
                 </div>
             </div>
         </>

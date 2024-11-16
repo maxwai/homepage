@@ -83,6 +83,20 @@
     font-size: 0.75em;
 }
 
+.cvDiplomasTable > tbody > tr > td {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    vertical-align: top;
+}
+
+.cvDiplomasTable > tbody > tr {
+    border-bottom: 1px solid black;
+}
+
+.cvDiplomasTable > tbody > tr:last-child {
+    border-bottom: none;
+}
+
 @media screen and (min-width: 700px) {
     .hostedServices {
         display: grid;
