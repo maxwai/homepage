@@ -6,7 +6,7 @@ import Image from "next/image";
 import profilePic from "../../public/images/profile_picture.jpg"
 import utilStyles from "../../styles/utils.module.css";
 
-export default function Me() {
+export default function Cv() {
     return (
         <>
             <Head>

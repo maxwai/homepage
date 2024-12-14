@@ -2,17 +2,17 @@ import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
-    faCloudArrowDown,
-    faLeaf,
-    faServer,
-    faMale,
-    faCubes,
-    faRectangleAd,
+    faBoxOpen,
     faCircleChevronRight,
+    faCloudArrowDown,
+    faCubes,
     faImages,
-    faBoxOpen
+    faLeaf,
+    faMale,
+    faRectangleAd,
+    faServer
 } from '@fortawesome/free-solid-svg-icons'
-import {faGitlab, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faGitlab, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 
 export default function Home() {
@@ -49,47 +49,60 @@ export default function Home() {
                 <div className={utilStyles.hostedServices}>
                     <div>
                         <a href="https://hub.docker.com/r/gitlab/gitlab-ce">
-                            <FontAwesomeIcon icon={faGitlab} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            <FontAwesomeIcon icon={faGitlab}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
                             Gitlab
                         </a>
                     </div>
                     <div>
                         <a href="https://github.com/nextcloud/server">
-                            <FontAwesomeIcon icon={faCloudArrowDown} className={utilStyles.fontAwesomeAccentColour}/>
+                            <FontAwesomeIcon icon={faCloudArrowDown}
+                                             className={utilStyles.fontAwesomeAccentColour}/>
                             Nextcloud
                         </a>
                     </div>
                     <div>
                         <a href="https://docs.paperless-ngx.com/">
-                            <FontAwesomeIcon icon={faLeaf} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            <FontAwesomeIcon icon={faLeaf}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
                             Paperless
                         </a>
                     </div>
                     <div>
                         <a href="https://github.com/louislam/uptime-kuma">
-                            <FontAwesomeIcon icon={faServer} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            <FontAwesomeIcon icon={faServer}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
                             Uptime
                         </a>
                     </div>
                     <div>
-                        <FontAwesomeIcon icon={faCubes} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                        <FontAwesomeIcon icon={faCubes}
+                                         className={utilStyles.fontAwesomeAccentColour} size="lg"/>
                         RPM Repository
                     </div>
                     <div>
                         <a href="https://pi-hole.net/">
-                            <FontAwesomeIcon icon={faRectangleAd} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            <FontAwesomeIcon icon={faRectangleAd}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
                             PiHole
                         </a>
                     </div>
                     <div>
                         <a href="https://github.com/sysadminsmedia/homebox">
-                            <FontAwesomeIcon icon={faBoxOpen} className={utilStyles.fontAwesomeAccentColour}/>
+                            <FontAwesomeIcon icon={faBoxOpen}
+                                             className={utilStyles.fontAwesomeAccentColour}/>
                             Homebox
                         </a>
                     </div>
                     <div>
                         <a href="https://immich.app/">
-                            <FontAwesomeIcon icon={faImages} className={utilStyles.fontAwesomeAccentColour} size="lg"/>
+                            <FontAwesomeIcon icon={faImages}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
                             Immich
                         </a>
                     </div>
@@ -98,24 +111,41 @@ export default function Home() {
                 <h1>
                     <Link href="/projects" className={utilStyles.headerLinks}>
                         Personal Projects {' '}
-                        <FontAwesomeIcon icon={faCircleChevronRight} className={utilStyles.fontAwesomeAccentColour}
+                        <FontAwesomeIcon icon={faCircleChevronRight}
+                                         className={utilStyles.fontAwesomeAccentColour}
                                          size="2xs"/>
                     </Link>
                 </h1>
                 <h1>
                     <Link href="/uni-projects" className={utilStyles.headerLinks}>
                         University Projects {' '}
-                        <FontAwesomeIcon icon={faCircleChevronRight} className={utilStyles.fontAwesomeAccentColour}
+                        <FontAwesomeIcon icon={faCircleChevronRight}
+                                         className={utilStyles.fontAwesomeAccentColour}
                                          size="2xs"/>
                     </Link>
                 </h1>
-                <h1>
-                    <Link href="/cv" className={utilStyles.headerLinks}>
-                        CV {' '}
-                        <FontAwesomeIcon icon={faCircleChevronRight} className={utilStyles.fontAwesomeAccentColour}
-                                         size="2xs"/>
-                    </Link>
-                </h1>
+                <div style={{display: "grid", gridTemplateColumns: "45% 45%", columnGap: "10%"}}>
+                    <div style={{textAlign: "end", width: "fit-content", justifySelf: "end"}}>
+                        <h1>
+                            <Link href="/cv" className={utilStyles.headerLinks}>
+                                CV {' '}
+                                <FontAwesomeIcon icon={faCircleChevronRight}
+                                                 className={utilStyles.fontAwesomeAccentColour}
+                                                 size="2xs"/>
+                            </Link>
+                        </h1>
+                    </div>
+                    <div style={{textAlign: "start", width: "fit-content", justifySelf: "start"}}>
+                        <h1>
+                            <Link href="/japan" className={utilStyles.headerLinks}>
+                                Japan {' '}
+                                <FontAwesomeIcon icon={faCircleChevronRight}
+                                                 className={utilStyles.fontAwesomeAccentColour}
+                                                 size="2xs"/>
+                            </Link>
+                        </h1>
+                    </div>
+                </div>
             </div>
             {/*<iframe className={utilStyles.MapsIframe}*/}
             {/*        src="https://www.google.com/maps/d/embed?mid=1PYvlXwIXQChIU3Fsy3WMzXkQ4zpshhEk&ehbc=2E312F">*/}

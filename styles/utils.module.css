@@ -97,6 +97,17 @@
     border-bottom: none;
 }
 
+.prefecture {
+    fill: var(--prefecture-empty);
+    stroke: hsl(202, 11%, 33%);
+    stroke-width: 0.5;
+    cursor: pointer;
+}
+
+.prefecture:hover {
+    fill: #93b25944;
+}
+
 @media screen and (min-width: 700px) {
     .hostedServices {
         display: grid;

@@ -5,6 +5,9 @@
     --white-translucent: rgba(255, 255, 255, 0.4);
     --shadow: 5px 5px 10px hsla(329, 43%, 10%, 0.7);
     --background: url('../public/images/background.jpg');
+
+    --evergreen: #93b259;
+    --prefecture-empty: hsl(44, 87%, 93%);
 }
 
 html, body {
@@ -84,4 +87,20 @@ a:hover .tooltip {
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+#map-tooltip {
+    position: fixed;
+    background: var(--prefecture-empty);
+    /* border: 1px solid black; */
+    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    display: none;
+    text-align: center;
+}
+
+#map-tooltip img {
+  max-width: 300px;
+  border-radius: 5pt;
 }
