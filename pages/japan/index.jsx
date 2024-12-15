@@ -90,10 +90,8 @@ export default function Japan() {
                 <>
                     This is a map of Japan showing all the beautiful prefectures, kindly provided
                     by <a href="https://mapchart.net">mapchart.net</a>. Each prefecture that I have
-                    visited is shown in green. Feel free to hover over the map to see my favourite
-                    photo I took there (so far)!
-                    <br/>
-                    The hover function is currently broken on mobile.
+                    visited is shown in green. Feel free to hover over the map (long press on
+                    mobile) to see my favourite photo I took there (so far)!
                     <br/>
                     Thanks to <a href="https://marcothms.de/">Marco Thomas</a> for the template.
                 </>
