@@ -1,4 +1,4 @@
-FROM node:20-alpine AS chef
+FROM node:23-alpine AS chef
 WORKDIR /app
 
 # Install dependencies only when needed
