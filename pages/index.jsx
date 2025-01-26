@@ -10,7 +10,8 @@ import {
     faLeaf,
     faMale,
     faRectangleAd,
-    faServer
+    faServer,
+    faHouseSignal
 } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faGitlab, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
@@ -99,6 +100,14 @@ export default function Home() {
                         </a>
                     </div>
                     <div>
+                        <a href="https://www.home-assistant.io/">
+                            <FontAwesomeIcon icon={faHouseSignal}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
+                            Home Assistant
+                        </a>
+                    </div>
+                    <div>
                         <a href="https://immich.app/">
                             <FontAwesomeIcon icon={faImages}
                                              className={utilStyles.fontAwesomeAccentColour}
@@ -106,7 +115,6 @@ export default function Home() {
                             Immich
                         </a>
                     </div>
-                    <div></div>
                 </div>
                 <h1>
                     <Link href="/projects" className={utilStyles.headerLinks}>
@@ -126,7 +134,7 @@ export default function Home() {
                 </h1>
                 <div style={{display: "grid", gridTemplateColumns: "45% 45%", columnGap: "10%"}}>
                     <div style={{textAlign: "end", width: "fit-content", justifySelf: "end"}}>
-                        <h1>
+                        <h1 style={{marginTop: "0"}}>
                             <Link href="/cv" className={utilStyles.headerLinks}>
                                 CV {' '}
                                 <FontAwesomeIcon icon={faCircleChevronRight}
@@ -136,7 +144,7 @@ export default function Home() {
                         </h1>
                     </div>
                     <div style={{textAlign: "start", width: "fit-content", justifySelf: "start"}}>
-                        <h1>
+                        <h1 style={{marginTop: "0"}}>
                             <Link href="/japan" className={utilStyles.headerLinks}>
                                 Japan {' '}
                                 <FontAwesomeIcon icon={faCircleChevronRight}
