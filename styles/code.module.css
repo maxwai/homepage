@@ -1,0 +1,82 @@
+.codeInline {
+    /* Taken from @atlaskit/code */
+    display: inline;
+    padding: 2px 0.5ch;
+    background-color: #091E420F;
+    border-radius: 3px;
+    border-style: none;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: #172B4D;
+    font: normal 400 0.875em/1 ui-monospace, Menlo, "Segoe UI Mono", "Ubuntu Mono", monospace;
+    line-height: inherit;
+    overflow: auto;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.codeBlock {
+    /* Taken from @atlaskit/code */
+    display: inline-block;
+    line-height: 20px;
+    overflow-x: auto;
+    white-space: pre;
+    direction: ltr;
+    font-size: 12px;
+    font-family: ui-monospace, Menlo, "Segoe UI Mono", "Ubuntu Mono", monospace;
+    font-weight: 400;
+    background-color: #F4F5F7;
+    color: #172B4D;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.codeBlock code[class*="language-"] {
+    /* Taken from @atlaskit/code */
+    display: flex !important;
+    flex-direction: column !important;
+    all: unset;
+    tab-size: 4;
+    padding: 8px 0;
+}
+
+.codeBlock code:first-of-type {
+    /* Taken from @atlaskit/code */
+    padding-right: 0 !important;
+    background-image: linear-gradient(to right, #EBECF0, #EBECF0 calc(2ch + 16px), transparent calc(2ch + 16px), transparent);
+}
+
+.codeBlock code:last-of-type {
+    /* Taken from @atlaskit/code */
+    -webkit-box-flex: 1;
+    word-break: break-word;
+    padding-right: 8px !important;
+}
+
+.codeBlockLine {
+    /* Taken from @atlaskit/code */
+    display: flex;
+    margin-right: -8px;
+    padding-right: 8px !important;
+}
+
+.codeBlockLineNumber {
+    /* Taken from @atlaskit/code */
+    display: inline-block !important;
+    float: left;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding-left: 8px;
+    margin-right: 8px;
+    text-align: right;
+    user-select: none;
+    min-width: calc(2ch + 16px) !important;
+    font-style: normal !important;
+    color: #505F79 !important;
+    padding-right: 8px !important;
+}
+
+.codeBlockLineNumber::after {
+    /* Taken from @atlaskit/code */
+    content: attr(data-ds--line-number);
+}

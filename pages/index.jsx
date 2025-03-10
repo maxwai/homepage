@@ -6,14 +6,20 @@ import {
     faCircleChevronRight,
     faCloudArrowDown,
     faCubes,
+    faHouseSignal,
     faImages,
+    faKitchenSet,
     faLeaf,
     faMale,
     faRectangleAd,
-    faServer,
-    faHouseSignal
+    faServer
 } from '@fortawesome/free-solid-svg-icons'
-import {faGithub, faGitlab, faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {
+    faGithub,
+    faGitlab,
+    faYoutube,
+    faWatchmanMonitoring
+} from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 
 export default function Home() {
@@ -115,6 +121,22 @@ export default function Home() {
                             Immich
                         </a>
                     </div>
+                    <div>
+                        <a href="https://github.com/TandoorRecipes/recipes">
+                            <FontAwesomeIcon icon={faKitchenSet}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
+                            Tandoor
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/louislam/uptime-kuma">
+                            <FontAwesomeIcon icon={faWatchmanMonitoring}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
+                            Uptime Kuma
+                        </a>
+                    </div>
                 </div>
                 <h1>
                     <Link href="/projects" className={utilStyles.headerLinks}>
@@ -155,9 +177,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/*<iframe className={utilStyles.MapsIframe}*/}
-            {/*        src="https://www.google.com/maps/d/embed?mid=1PYvlXwIXQChIU3Fsy3WMzXkQ4zpshhEk&ehbc=2E312F">*/}
-            {/*</iframe>*/}
         </>
     );
 }

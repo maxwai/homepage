@@ -76,13 +76,7 @@ export default function Cv() {
                 <>
                     <h2>Experience</h2>
                     <h3>MicroFuzzy GmbH (February - June 2017)</h3>
-                    Elektronik and network setup of new workplace tables
-                    <h3>Parfun Co., Ltd. (September 2022 - January 2023)</h3>
-                    Internship in Japan as part of studies.
-                    <ul>
-                        <li>Development of a modern Wordpress website</li>
-                        <li>Development of an Android App with an AWS Backend</li>
-                    </ul>
+                    Electronic and network setup of new workplace tables
                     <h3>Teiimo GmbH (March 2020 - January 2024)</h3>
                     Working student position
                     <ul>
@@ -91,11 +85,19 @@ export default function Cv() {
                         <li>Development of binary parser in Python and C++</li>
                         <li>Design of new internal processes for software development</li>
                     </ul>
+                    <h3>Parfun Co., Ltd. (September 2022 - January 2023)</h3>
+                    Internship in Japan as part of studies.
+                    <ul>
+                        <li>Development of a modern Wordpress website</li>
+                        <li>Development of an Android App with an AWS Backend</li>
+                    </ul>
                     <h3>LRE Medical GmbH (February 2024 - now)</h3>
                     Working student position
                     <ul>
                         <li>Server management</li>
-                        <li>Validation of Tools used to certify software</li>
+                        <li>Validation of tools used to certify software</li>
+                        <li>Creation and management of CI/CD pipeline in Gitlab</li>
+                        <li>Migration of legacy systems to new build systems/environments</li>
                     </ul>
                 </>
                 <>
@@ -116,7 +118,7 @@ export default function Cv() {
                     </table>
                 </>
                 <div className={utilStyles.timeStamp}>
-                    from 2024.11.16
+                    from 2025.03.10
                 </div>
             </div>
         </>

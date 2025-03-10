@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from "next/link";
 import {faArrowLeft, faLink} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Code, CodeBlock} from '@atlaskit/code';
 import utilStyles from "../../styles/utils.module.css";
+import utilStylesCode from "../../styles/code.module.css";
+import CodeBlock from "../../components/CodeBlock"
 
 const miniJavaCodeBlock = `Program (
     declarations: [
@@ -113,15 +114,10 @@ export default function UniProjects() {
                             <li>
                                 A parser that takes in a string containing a "Mini"-Java program and
                                 gives the program in Java objects. <br/>
-                                For example: <Code>int x; x = 5;</Code> would be translated
-                                into: <br/>
+                                For example: <div className={utilStylesCode.codeInline}>int x; x =
+                                5;</div> would be translated into: <br/>
                                 <br/>
-                                <CodeBlock
-                                    text={miniJavaCodeBlock}
-                                    shouldWrapLongLines={true}
-                                    showLineNumbers={true}
-                                />
-                                <br/>
+                                <CodeBlock content={miniJavaCodeBlock}/>
                             </li>
                             <li>
                                 A parser that takes that Java object and creates an Assembler
