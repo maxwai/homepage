@@ -37,8 +37,8 @@ export default function Projects() {
                         I made this homepage using a template of a friend. I wrote it using next.js
                         in Javascript then exported it as a static html.<br/>
                         I use next.js instead of direct HTML and CSS (which would be possible)
-                        because it is easier to develop with next.js because of the autocomplete and
-                        some helper packages.
+                        because it is easier to develop with next.js because of convenience
+                        functions and some helper packages.
                     </>
                 </>
                 <>
