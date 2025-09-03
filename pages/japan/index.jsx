@@ -53,12 +53,17 @@ import {Tokyo} from "../../components/prefectures/Tokyo";
 import {Hokkaido} from "../../components/prefectures/Hokkaido";
 
 import AichiImage from "../../public/images/japan/Aichi.jpg";
+import AkitaImage from "../../public/images/japan/Akita.jpg";
+import AomoriImage from "../../public/images/japan/Aomori.jpg";
 import FukuokaImage from "../../public/images/japan/Fukuoka.jpg";
 import FukushimaImage from "../../public/images/japan/Fukushima.jpg";
+import GifuImage from "../../public/images/japan/Gifu.jpg";
 import GunmaImage from "../../public/images/japan/Gunma.jpg";
 import HiroshimaImage from "../../public/images/japan/Hiroshima.jpg";
 import HokkaidoImage from "../../public/images/japan/Hokkaido.jpg";
 import HyogoImage from "../../public/images/japan/Hyogo.jpg";
+import IshikawaImage from "../../public/images/japan/Ishikawa.jpg";
+import IwateImage from "../../public/images/japan/Iwate.jpg";
 import KanagawaImage from "../../public/images/japan/Kanagawa.jpg";
 import KyotoImage from "../../public/images/japan/Kyoto.jpg";
 import MiyagiImage from "../../public/images/japan/Miyagi.jpg";
@@ -70,7 +75,9 @@ import SaitamaImage from "../../public/images/japan/Saitama.jpg";
 import ShizuokaImage from "../../public/images/japan/Shizuoka.jpg";
 import TochigiImage from "../../public/images/japan/Tochigi.jpg";
 import TokyoImage from "../../public/images/japan/Tokyo.jpg";
+import ToyamaImage from "../../public/images/japan/Toyama.jpg";
 import WakayamaImage from "../../public/images/japan/Wakayama.jpg";
+import YamagataImage from "../../public/images/japan/Yamagata.jpg";
 import YamanashiImage from "../../public/images/japan/Yamanashi.jpg";
 
 export default function Japan() {
@@ -97,21 +104,21 @@ export default function Japan() {
                 </>
                 <svg id="svg-map" viewBox="85 40 450 510">
                     <Aichi image={AichiImage.src}/>
-                    <Akita/>
-                    <Aomori/>
+                    <Akita image={AkitaImage.src}/>
+                    <Aomori image={AomoriImage.src}/>
                     <Chiba/>
                     <Ehime/>
                     <Fukui/>
                     <Fukuoka image={FukuokaImage.src}/>
                     <Fukushima image={FukushimaImage.src}/>
-                    <Gifu/>
+                    <Gifu image={GifuImage.src}/>
                     <Gunma image={GunmaImage.src}/>
                     <Hiroshima image={HiroshimaImage.src}/>
                     <Hokkaido image={HokkaidoImage.src}/>
                     <Hyogo image={HyogoImage.src}/>
                     <Ibaraki/>
-                    <Ishikawa/>
-                    <Iwate/>
+                    <Ishikawa image={IshikawaImage.src}/>
+                    <Iwate image={IwateImage.src}/>
                     <Kagawa/>
                     <Kagoshima/>
                     <Kanagawa image={KanagawaImage.src}/>
@@ -138,9 +145,9 @@ export default function Japan() {
                     <Tokushima/>
                     <Tokyo image={TokyoImage.src}/>
                     <Tottori/>
-                    <Toyama/>
+                    <Toyama image={ToyamaImage.src}/>
                     <Wakayama image={WakayamaImage.src}/>
-                    <Yamagata/>
+                    <Yamagata image={YamagataImage.src}/>
                     <Yamaguchi/>
                     <Yamanashi image={YamanashiImage.src}/>
                 </svg>

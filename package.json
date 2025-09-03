@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "version": "1.5.7",
+  "version": "1.6.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,8 +11,8 @@
     "@fortawesome/fontawesome-svg-core": "7.0.0",
     "@fortawesome/free-brands-svg-icons": "7.0.0",
     "@fortawesome/free-solid-svg-icons": "7.0.0",
-    "@fortawesome/react-fontawesome": "0.2.3",
-    "next": "15.4.5",
+    "@fortawesome/react-fontawesome": "3.0.2",
+    "next": "15.5.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "node-emoji": "2.2.0",
