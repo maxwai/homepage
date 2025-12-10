@@ -11,8 +11,7 @@ import {
     faKitchenSet,
     faLeaf,
     faMale,
-    faRectangleAd,
-    faServer
+    faRectangleAd
 } from '@fortawesome/free-solid-svg-icons'
 import {
     faGithub,
@@ -79,7 +78,7 @@ export default function Home() {
                     </div>
                     <div>
                         <a href="https://github.com/louislam/uptime-kuma">
-                            <FontAwesomeIcon icon={faServer}
+                            <FontAwesomeIcon icon={faWatchmanMonitoring}
                                              className={utilStyles.fontAwesomeAccentColour}
                                              size="lg"/>
                             Uptime
@@ -121,20 +120,13 @@ export default function Home() {
                             Immich
                         </a>
                     </div>
+                    <div></div>
                     <div>
                         <a href="https://github.com/TandoorRecipes/recipes">
                             <FontAwesomeIcon icon={faKitchenSet}
                                              className={utilStyles.fontAwesomeAccentColour}
                                              size="lg"/>
                             Tandoor
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/louislam/uptime-kuma">
-                            <FontAwesomeIcon icon={faWatchmanMonitoring}
-                                             className={utilStyles.fontAwesomeAccentColour}
-                                             size="lg"/>
-                            Uptime Kuma
                         </a>
                     </div>
                 </div>
