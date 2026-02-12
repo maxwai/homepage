@@ -2,7 +2,6 @@ import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
-    faBoxOpen,
     faCircleChevronRight,
     faCloudArrowDown,
     faCubes,
@@ -98,10 +97,11 @@ export default function Home() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://github.com/sysadminsmedia/homebox">
-                            <FontAwesomeIcon icon={faBoxOpen}
-                                             className={utilStyles.fontAwesomeAccentColour}/>
-                            Homebox
+                        <a href="https://github.com/TandoorRecipes/recipes">
+                            <FontAwesomeIcon icon={faKitchenSet}
+                                             className={utilStyles.fontAwesomeAccentColour}
+                                             size="lg"/>
+                            Tandoor
                         </a>
                     </div>
                     <div>
@@ -118,15 +118,6 @@ export default function Home() {
                                              className={utilStyles.fontAwesomeAccentColour}
                                              size="lg"/>
                             Immich
-                        </a>
-                    </div>
-                    <div></div>
-                    <div>
-                        <a href="https://github.com/TandoorRecipes/recipes">
-                            <FontAwesomeIcon icon={faKitchenSet}
-                                             className={utilStyles.fontAwesomeAccentColour}
-                                             size="lg"/>
-                            Tandoor
                         </a>
                     </div>
                 </div>
