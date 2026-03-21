@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,11 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "7.1.0",
-    "@fortawesome/free-brands-svg-icons": "7.1.0",
-    "@fortawesome/free-solid-svg-icons": "7.1.0",
-    "@fortawesome/react-fontawesome": "3.2.0",
-    "next": "16.1.6",
+    "@fortawesome/fontawesome-svg-core": "7.2.0",
+    "@fortawesome/free-brands-svg-icons": "7.2.0",
+    "@fortawesome/free-solid-svg-icons": "7.2.0",
+    "@fortawesome/react-fontawesome": "3.3.0",
+    "next": "16.2.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "node-emoji": "2.2.0",
